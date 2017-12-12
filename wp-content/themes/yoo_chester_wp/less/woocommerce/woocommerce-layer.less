@@ -1,0 +1,23 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+.woocommerce,
+.woocommerce-page {
+
+    &.widget_product_search input[type="submit"]
+    input.button,
+    input[type="submit"],
+    #respond input#submit,
+    #content input.button {
+
+        &:hover,
+        &:focus { background: @button-hover-border !important; }
+
+    }
+
+    &.widget_product_search input[type="submit"]:active
+    input.button:active,
+    input[type="submit"]:active,
+    #respond input#submit:active,
+    #content input.button:active { background: @button-active-border !important; }
+
+}

@@ -1,0 +1,92 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+
+#tm-top-a {
+display: none;
+}
+
+.page-id-31 #tm-top-a {
+display: block;
+}
+
+.home .tm-top-a .home_slideshow .uk-slideshow,
+.home .tm-top-a .home_slideshow .uk-slideshow li {
+	height: 400px!important;
+}
+
+body .gform_wrapper .top_label div.ginput_container {
+    margin-top: 2px;
+}
+
+.gform_wrapper {
+	max-width: 600px;
+}
+
+.gform_wrapper ul li.gfield input,
+.gform_wrapper ul li.gfield select,
+.gform_wrapper ul li.gfield textarea {
+	width: 100%!important;
+}
+
+.gform_wrapper ul li.gfield.half-left,
+.gform_wrapper ul li.gfield.half-right {
+	float: left;
+	clear: none;
+	width: 49%!important;
+}
+
+.gform_wrapper .group {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.gform_wrapper ul li.gfield.half-left {
+	margin-right: 1%;
+}
+
+.gform_wrapper ul li.gfield.full {
+	clear: both;
+}
+
+.gform_wrapper ul li.gfield.field-time {
+
+}
+
+.gform_wrapper .gform_button {
+    background: #15579c;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gform_wrapper .gform_button:hover {
+	background: #fdc70c;
+	transition: all 100ms linear;
+}
+
+.gform_wrapper ul li.gfield.field-time .ginput_container label,
+.gform_wrapper ul li.gfield.field-time .ginput_container i {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.gform_wrapper ul li.gfield.half-left,
+	.gform_wrapper ul li.gfield.half-right {
+		float: none;
+		clear: both;
+		width: 100%!important;
+	}
+
+	.gform_wrapper ul li.gfield.half-left {
+		margin-right: 0;
+	}
+
+}
