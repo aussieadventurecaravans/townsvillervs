@@ -24,3 +24,4 @@ wp-config.php
 /wp-content/wp-cache-config.php
 /wp-content/plugins/hello.php
 /wp-content/themes/dreamseeker/cache/
+/wp-content/plugins/widgetkit/cache/
