@@ -8126,7 +8126,7 @@ a.uk-thumbnail:focus {
 /* Large screen and bigger */
 @media (min-width: 1220px) {
   .uk-container {
-    max-width: 1260px;
+    max-width: 1300px;
     padding: 0 40px;
   }
 }
