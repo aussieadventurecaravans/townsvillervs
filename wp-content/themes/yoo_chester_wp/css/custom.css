@@ -90,3 +90,16 @@ body .gform_wrapper .top_label div.ginput_container {
 	}
 
 }
+
+.uk-nav-navbar > li:hover, .uk-nav-navbar > li:focus
+{
+	background-color: #ffffff;
+	color: #185fae;
+}
+.uk-nav-navbar > li:hover > a{
+	color: #185fae;
+}
+.uk-nav-navbar > li > a:hover, .uk-nav-navbar > li > a:focus
+{
+	color: #185fae;
+}
