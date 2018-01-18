@@ -110,3 +110,9 @@ body .gform_wrapper .top_label div.ginput_container {
 {
 	color: #185fae;
 }
+
+.uk-nav-dropdown > li.uk-active > a, .uk-nav-navbar > li.uk-active > a
+{
+	background-color: #185fae;
+	color: #ffffff;
+}
