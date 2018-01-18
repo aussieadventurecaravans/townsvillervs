@@ -120,3 +120,8 @@ body .gform_wrapper .top_label div.ginput_container {
 .uk-button-success:hover, .uk-button-success:focus{
 	color: #ffffff;
 }
+
+.uk-button-success:active, .uk-button-success.uk-active {
+	background-color: #1760ad;
+	color: #ffffff;
+}
