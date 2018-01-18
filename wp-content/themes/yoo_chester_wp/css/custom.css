@@ -105,3 +105,8 @@ body .gform_wrapper .top_label div.ginput_container {
 	background-color: #185fae;
 	color: #ffffff;
 }
+
+.uk-nav-navbar ul a:hover
+{
+	color: #185fae;
+}
