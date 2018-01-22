@@ -76,6 +76,7 @@ add_filter('woocommerce_product_categories_widget_args','customize_product_categ
 function customize_product_categories($list_args)
 {
     //hard code --- hide the category link show up at some category page except this category page
+    //67 is the category of 'Accessories & Parts'
     $hide_category_id = '67';
     if($list_args['current_category'] != $hide_category_id || $list_args['current_category_ancestors'][0] != $hide_category_id)
     {
@@ -84,7 +85,11 @@ function customize_product_categories($list_args)
         $list_args['include'] =  str_replace($hide_category_id,'',$category_list);
         
     }
-
+    //Show only children category for this hidden category
+    if($list_args['current_category'] == $hide_category_id)
+    {
+        $list_args['include'] = $list_args['current_category'].','. $list_args['direct_children'];
+    }
 
     //echo print_r($list_args,true); die;
     return $list_args;

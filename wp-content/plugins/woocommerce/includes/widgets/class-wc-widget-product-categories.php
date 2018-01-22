@@ -172,6 +172,11 @@ class WC_Widget_Product_Categories extends WC_Widget {
 				}
 			}
 
+			/* CUSTOMIZE THE CATEGORIES WIDGET*/
+            $list_args['sibling_categories'] =  implode( ',',$siblings);
+            $list_args['direct_children'] =  implode( ',',$direct_children);
+            /* ENDING- CUSTOMIZE THE CATEGORIES WIDGET */
+
 			if ( $hierarchical ) {
 				$include = array_merge( $top_level, $this->cat_ancestors, $siblings, $direct_children, array( $this->current_cat->term_id ) );
 			} else {
