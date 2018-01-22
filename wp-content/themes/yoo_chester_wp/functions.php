@@ -88,7 +88,7 @@ function customize_product_categories($list_args)
     //Show only children category for this hidden category
     if($list_args['current_category'] == $hide_category_id || in_array($hide_category_id,$list_args['current_category_ancestors']) == true)
     {
-        $list_args['include'] = implode( ',',$list_args['current_category_ancestors']).','. $list_args['current_category'].','.$list_args['direct_children'] ;
+        $list_args['include'] = implode( ',',$list_args['current_category_ancestors']).','. $list_args['current_category'].','.$list_args['direct_children']. ', ' . $list_args['sibling_categories'] ;
     }
 
     //echo print_r($list_args,true); die;
