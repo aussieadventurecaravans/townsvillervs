@@ -78,7 +78,7 @@ function customize_product_categories($list_args)
     //hard code --- hide the category link show up at some category page except this category page
     //67 is the category of 'Accessories & Parts'
     $hide_category_id = '67';
-    if($list_args['current_category'] != $hide_category_id || $list_args['current_category_ancestors'][0] != $hide_category_id)
+    if($list_args['current_category'] != $hide_category_id || in_array($hide_category_id,$list_args['current_category_ancestors']) == true)
     {
         $category_list = $list_args['include'] ;
         //remove the category from the list
@@ -86,9 +86,9 @@ function customize_product_categories($list_args)
         
     }
     //Show only children category for this hidden category
-    if($list_args['current_category'] == $hide_category_id)
+    if($list_args['current_category'] == $hide_category_id || in_array($hide_category_id,$list_args['current_category_ancestors']) == true)
     {
-        $list_args['include'] = $list_args['current_category'].','. $list_args['direct_children'];
+        $list_args['include'] = implode( ',',$list_args['current_category_ancestors']).','. $list_args['current_category'].','.$list_args['direct_children'] ;
     }
 
     //echo print_r($list_args,true); die;
